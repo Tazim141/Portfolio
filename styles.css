@@ -1,0 +1,79 @@
+
+/*Color Pallate*/
+:root{
+    --orange: #eb5e28;
+    --black: #252422;
+    --light-black: #403d39;
+    --grey: #ccc5b9;
+    --white: #fffcf2;
+
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  
+}
+
+a{
+    text-decoration: none;
+    list-style-type: none;
+    white-space: nowrap;
+}
+
+header{
+    width: 100vw;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 0.5px solid var(--black);
+    padding: 10px 200px;
+    background-color: var(--orange);
+    color: var(--white);
+    font-family: "Playwrite Cu";
+    font-size: 10px;
+}
+
+.name{
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: evenly;
+    padding: 0;
+    
+    list-style: none;
+    gap: 10%;
+    margin-top: 2.5rem;
+}
+
+nav a {
+    color: var(--white);
+}
+
+
+@media screen and (max-width: 768px) {
+    header {
+        padding: 10px 20px; 
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .name {
+        text-align: center; 
+        flex: 1; 
+        margin-top: 1rem; 
+    }
+    
+    nav ul {
+        flex-direction: row; 
+        justify-content: center; 
+        gap: 5; 
+        margin-top: 10px; 
+    }
